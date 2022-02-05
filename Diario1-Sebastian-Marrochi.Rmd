@@ -1,0 +1,9 @@
+---
+title: "Taller I"
+author: "Sebastian Marrochi"
+date: "2/5/2022"
+output: html_document
+---
+
+hello.string <-'Hello, World'
+print(hello.string)
