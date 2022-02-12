@@ -1,0 +1,60 @@
+---
+title: "Taller 2"
+author: "Sebastian Marrochi"
+date: "2/11/2022"
+output: html_document
+---
+<!-- Dado x = (3, 5, 31, 1, 9, 10, 0, 18) y dado y = (1, 1, 3, 1, 99, 10, 10, 7) realice lo siguiente: -->
+
+x <- c(3,5,31,1,9,10,0,18)
+
+y <- c(1, 1, 3, 1, 99, 10, 10, 7)
+
+<!-- Calcule la media, la varianza, la ra´ız cuadrada y la desviaci´on est´andar de y. Calcule la media, -->
+<!-- la varianza, la ra´ız cuadrada y la desviaci´on est´andar de x. Calcule la correlaci´on entre x y y. -->
+
+mean(y)
+var(y)
+sd(y)
+
+mean(x)
+var(x)
+sd(x)
+
+sqrt(x)
+sqrt(y)
+
+
+<!-- Escriba un comando en R para extraer las entradas 2 a la 7 de x. -->
+
+x[c(2,7)]
+
+<!-- Escriba un comando en R para extraer las entradas de y excepto la 2 y la 7 -->
+
+y[c(1,3,4,5,6,8)]
+
+<!-- Escriba un comando en R para extraer las entradas de y menores a -3 o mayores a 10 -->
+
+y[c(-3:10)]
+
+<!-- No es posible extraer valores de un vector utilizando indice positivos y negativos vector.con.datos[c(1,-3,-4))] -->
+<!-- esta operación no esta permitida y genera el siguiente error : only 0’s may be mixed with negative subscripts -->
+
+
+<!-- Introduzca en R la siguiente matriz a 4 × 3 usando: -->
+
+primera.matriz <- matrix(data = c(1,2,3,4,5,6,7,8,9,10,11,12),
+nrow = 4, ncol = 4, byrow = T)
+
+primera.matriz
+
+<!-- Usando c´odigo R (no archivos) en un DataFrame genere la siguiente tabla de datos: -->
+
+sexo = c("h","m","h","h","m","h")
+nivel = c("bach","bach","bach","lic","lic","dr")
+peso = c(68, 75, 88,34,76,90)
+edad = c(65, 79, 85,34,23,43)
+
+p = data.frame(sexo,nivel,peso,edad)
+
+p
